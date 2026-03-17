@@ -79,7 +79,7 @@ Parameters:
 
 \
 \
-\
+
 | README.md 🇪🇸 |
 | :---: |
 #### Wortspiel — Juego de Memoria Alemán-Español
