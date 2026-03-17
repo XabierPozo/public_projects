@@ -10,8 +10,8 @@ header('Access-Control-Allow-Origin: *');
 
 // DB Config
 define('DB_HOST', 'WortSpiel_db'); 
-define('DB_USER', 'user_php');
-define('DB_PASS', '1234');
+define('DB_USER', 'user_wortspiel');
+define('DB_PASS', '****');
 define('DB_NAME', 'wortspiel_db');
 
 function getDB() {
