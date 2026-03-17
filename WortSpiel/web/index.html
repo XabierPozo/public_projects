@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wortspiel — Memoriza los verbos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1>Wort<span>spiel</span></h1>
+    <p>Memoriza los verbos · alemán &amp; español</p>
+  </header>
+
+  <!-- Controls -->
+  <div class="controls">
+    <div class="control-group">
+      <label for="count-sel">Parejas</label>
+      <select id="count-sel">
+        <option value="4">4</option>
+        <option value="6">6</option>
+        <option value="8" selected>8</option>
+        <option value="10">10</option>
+        <option value="12">12</option>
+        <option value="16">16</option>
+        <option value="20">20</option>
+      </select>
+    </div>
+    <button class="btn btn-primary" id="btn-start">Nueva partida</button>
+  </div>
+
+  <!-- Statistics -->
+  <div class="stats" id="stats-bar" style="display:none">
+    <div class="stat">
+      <span class="stat-val" id="s-moves">0</span>
+      <span class="stat-label">Intentos</span>
+    </div>
+    <div class="stat-sep"></div>
+    <div class="stat">
+      <span class="stat-val" id="s-matched">0</span>
+      <span class="stat-label">Parejas</span>
+    </div>
+    <div class="stat-sep"></div>
+    <div class="stat">
+      <span class="stat-val" id="s-timer">0:00</span>
+      <span class="stat-label">Tiempo</span>
+    </div>
+  </div>
+
+  <!-- Progress -->
+  <div class="progress-wrap" id="progress-wrap" style="display:none">
+    <div class="progress-bar" id="progress-bar"></div>
+  </div>
+
+  <!-- Board -->
+  <main class="board" id="board">
+    <div class="state-msg">
+      <p>Pulsa <strong>Nueva partida</strong> para comenzar</p>
+    </div>
+  </main>
+
+  <!-- Win overlay -->
+  <div class="overlay" id="overlay">
+    <div class="win-box">
+      <div class="win-icon">🎉</div>
+      <h2>Perfekt!!!</h2>
+      <p>
+        Has completado todas las parejas.
+        <br>
+        Sigue practicando para mejorar tu vocabulario.
+      </p>
+      <div class="win-stats">
+        <div>
+          <span class="win-stat-val" id="w-moves">—</span>
+          <span class="win-stat-label">Intentos</span>
+        </div>
+        <div>
+          <span class="win-stat-val" id="w-time">—</span>
+          <span class="win-stat-label">Tiempo</span>
+        </div>
+      </div>
+      <button class="btn btn-primary" id="btn-again" style="margin-right:0.5rem">Jugar de nuevo</button>
+      <button class="btn btn-secondary" id="btn-close">Cerrar</button>
+    </div>
+  </div>
+  <script type="module" src="js/main.js"></script>
+  </body>
+</html>
