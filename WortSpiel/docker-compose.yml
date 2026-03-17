@@ -1,0 +1,34 @@
+services:
+  # Web Server with PHP & Apache
+  WortSpiel:
+    image: php:8.2-apache
+    ports:
+      - "8081:80"
+    volumes:
+      - ./web:/var/www/html
+    networks:
+      - app-network
+    depends_on:
+      - WortSpiel_db
+    # pdo_mysql extension installation
+    command: >
+      sh -c "docker-php-ext-install pdo pdo_mysql && apache2-foreground"
+
+  # MySQL DB
+  WortSpiel_db:
+    image: mysql:8.0
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_DATABASE: wortspiel_db
+      MYSQL_USER: user_wortspiel
+      MYSQL_PASSWORD: ****
+      MYSQL_ROOT_PASSWORD: ****
+    volumes:
+      - ./sql/database.sql:/docker-entrypoint-initdb.d/database.sql:ro
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
