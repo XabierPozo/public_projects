@@ -1,9 +1,9 @@
-# /---------------------------------------------------------------------------------------------------------------\
-# | README.md ENGLISH                                                                                             |
-# \---------------------------------------------------------------------------------------------------------------/
-# Wortspiel — Memory Game
+### /---------------------------------------------------------------------------------------------------------------\
+### | README.md ENGLISH                                                                                             |
+### \---------------------------------------------------------------------------------------------------------------/
+#### Wortspiel — Memory Game
 
-## File Structure
+##### File Structure
 
 ```
 wortspiel/
@@ -26,16 +26,16 @@ wortspiel/
             api.php     ← API that reads vocabulary from MySQL
 ```
 
-## Requirements
+##### Requirements
 If developing the web app in a container, you will need:
 Docker & Docker Compose installed
 
-## Installation
+##### Installation
 
-### 1. Install the game
+###### 1. Install the game
 From the terminal, run "docker-compose up -d --build" at the root of the wortspiel project.
 
-### 2. Configure api.php
+###### 2. Configure api.php
 Edit the constants at the top of `api.php`:
 ```php
 define('DB_HOST', 'WortSpiel_db'); 
@@ -44,11 +44,11 @@ define('DB_PASS', '****');
 define('DB_NAME', 'wortspiel_db');
 ```
 
-### 3. Deploy
+###### 3. Deploy
 Access `http://your-server/wortspiel/index.html`.
 ---
 
-## API Reference
+##### API Reference
 
 `GET api.php?action=pairs&count=8`
 
@@ -70,7 +70,7 @@ Parameters:
 
 ---
 
-## Game Rules
+##### Game Rules
 1. All cards start face down
 2. Click a card to flip it over
 3. Click a second card
@@ -79,12 +79,12 @@ Parameters:
 6. You win when you match all the cards
 
 
-# /---------------------------------------------------------------------------------------------------------------\
-# | README.md ESPAÑOL                                                                                             |
-# \---------------------------------------------------------------------------------------------------------------/
-# Wortspiel — Juego de Memoria Alemán-Español
+### /---------------------------------------------------------------------------------------------------------------\
+### | README.md ESPAÑOL                                                                                             |
+## \---------------------------------------------------------------------------------------------------------------/
+#### Wortspiel — Juego de Memoria Alemán-Español
 
-## Estructura de archivos
+##### Estructura de archivos
 
 ```
 wortspiel/
@@ -107,16 +107,16 @@ wortspiel/
             api.php     ← API que lee el vocabulario desde MySQL
 ```
 
-## Requisitos
+##### Requisitos
 En caso de desarrollar la web en un container, se requerirá:
 Docker & Docker Compose instalados
 
-## Instalación
+##### Instalación
 
-### 1. Instalar juego
+###### 1. Instalar juego
 A partir del terminal, ejecuta en la base del proyecto wortspiel "docker-compose up -d --build"
 
-### 2. Configurar api.php
+###### 2. Configurar api.php
 Edita las constantes en la parte superior de `api.php`:
 ```php
 define('DB_HOST', 'WortSpiel_db'); 
@@ -125,11 +125,11 @@ define('DB_PASS', '****');
 define('DB_NAME', 'wortspiel_db');
 ```
 
-### 3. Desplegar
+###### 3. Desplegar
 Accede a `http://tu-servidor/wortspiel/index.html`.
 ---
 
-## Referencia de API
+##### Referencia de API
 `GET api.php?action=pairs&count=8`
 
 Devuelve N parejas aleatorias de la base de datos.
@@ -150,7 +150,7 @@ Parámetros:
 
 ---
 
-## Reglas del juego
+##### Reglas del juego
 1. Todas las cartas empiezan boca abajo
 2. Haz clic en una carta para voltearla
 3. Haz clic en una segunda carta
