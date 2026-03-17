@@ -77,7 +77,9 @@ Parameters:
 5. If they do not match, they flip back over
 6. You win when you match all the cards
 
-
+<br>
+<br>
+<br>
 | README.md 🇪🇸 |
 | :---: |
 #### Wortspiel — Juego de Memoria Alemán-Español
