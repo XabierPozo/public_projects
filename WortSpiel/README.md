@@ -1,5 +1,5 @@
-### | README.md ENGLISH |
-### | :---: |
+| README.md ENGLISH |
+| :---: |
 #### Wortspiel — Memory Game
 
 ##### File Structure
@@ -78,9 +78,8 @@ Parameters:
 6. You win when you match all the cards
 
 
-### /---------------------------------------------------------------------------------------------------------------\
-### | README.md ESPAÑOL                                                                                             |
-## \---------------------------------------------------------------------------------------------------------------/
+| README.md ESPAÑOL |
+| :---: |
 #### Wortspiel — Juego de Memoria Alemán-Español
 
 ##### Estructura de archivos
