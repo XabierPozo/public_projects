@@ -77,8 +77,7 @@ Parameters:
 5. If they do not match, they flip back over
 6. You win when you match all the cards
 
-\
-\
+&nbsp;
 &nbsp;
 
 | README.md 🇪🇸 |
