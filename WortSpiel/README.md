@@ -1,4 +1,4 @@
-| README.md ENGLISH |
+| README.md 🇬🇧 |
 | :---: |
 #### Wortspiel — Memory Game
 
@@ -78,7 +78,7 @@ Parameters:
 6. You win when you match all the cards
 
 
-| README.md ESPAÑOL |
+| README.md 🇪🇸 |
 | :---: |
 #### Wortspiel — Juego de Memoria Alemán-Español
 
